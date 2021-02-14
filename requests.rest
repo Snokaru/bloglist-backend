@@ -1,4 +1,4 @@
-POST http://localhost:3003/api/blogs
+POST http://localhost:3001/api/blogs
 Content-Type: application/json
 
 {
@@ -9,4 +9,4 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3003/api/blogs
+GET http://localhost:3001/api/blogs
