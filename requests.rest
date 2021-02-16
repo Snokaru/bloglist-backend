@@ -1,5 +1,7 @@
+###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR1c2VyIiwiaWQiOiI2MDJjMGZiZDhmNThmMDUyNTM2NjQyYTMiLCJpYXQiOjE2MTM1MDI4NjJ9.IXGgSpRpscWyqXtus1RmvD3qUL_adUITcNxFb6v0ypw
 
 {
     "title": "Another blog",
@@ -10,3 +12,30 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3001/api/blogs
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "name": "Test User2",
+    "username": "tuser2",
+    "password": "testpassword"
+}
+
+###
+GET http://localhost:3001/api/users
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "tuser2",
+    "password": "testpassword"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/602c1c498acfb75b4afceb54
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR1c2VyMiIsImlkIjoiNjAyYzFkNWNhMWNhOTE1YzQ5YWU1MmViIiwiaWF0IjoxNjEzNTAzODQ5fQ.sWfmY4ln4UiwSqM8JxpWasRe4SqYB-eFx0yUNwg9BL0
